@@ -1,5 +1,58 @@
+@font-face {
+    font-family: ledlight;
+    src: url(fonts/ledlight.otf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: csweird;
+    src: url(fonts/csweird.otf);
+}
+
+@font-face {
+    font-family: csbrian;
+    src: url(fonts/csbrian.otf);
+
+}
+
+body {
+    font-family: csbrian;
+    background-image: linear-gradient(#000910, #0c395a, #000910);
+    color: white;
+}
+
+.title {
+    font-family: ledlight;
+    color: white; 
+    font-size: 4em;
+    text-align: left;
+}
+#titleInTitle {
+    
+    font-size: 0.6em;
+}
+
 #canvas {
-    width: 100%;
-    height: 800px;
-    display: block;;
+    width: 50%;
+    height: 400px;
+    display: block;
+}
+
+/* Temporary */
+.hideRn {
+    display: none;
+}
+
+/* settings for visualizer template ?? */
+#settings {
+    text-align: center;
+    font-size: 12px;
+    right: 30px;
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    border: 2px solid black; 
+    backdrop-filter: blur(); /* blur effect at some point idk i love my backdrop blur */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
 }

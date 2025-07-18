@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio Visualizer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1> Audio Visualizer </h1>
-    <p> john pork </p>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <h1 class="title">
+      Audio Visualizer<span id="titleInTitle"> by John Pork</span>
+    </h1>
+    <div id="settings">
+      <h1>Settings Menu</h1>
+      <h2>template</h2>
+    </div>
+    
+    <!-- Audio Element for testing -->
+     <audio id="audioTest" controls>
+      <source src="/musicTest/warmpop.mp3" type="audio/mpeg" />
+      Browser doesn't support audio play loser
+    </audio>
+    <canvas id="canvas"> </canvas>
+  
+    <!-- These do nothing atm -->
+     
     <!--button that accepts audio files from user-->
-    <input type="file" accept="audio/*" id="audio">
+    <input type="file" accept="audio/*" id="audioFile" class="hideRn" />
     <!-- Play Button -->
-    <button id="play">Play</button>
-
-    <canvas id="canvas">
-
-    </canvas>
+    <button id="play" class="hideRn">Play</button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
